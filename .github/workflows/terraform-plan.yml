@@ -5,9 +5,9 @@ on:
   push:
 
 env:
-  TF_CLOUD_ORGANIZATION: "${{ secrets.TF_ORGANIZATION }}"
+  TF_CLOUD_ORGANIZATION: "${{ env.TF_ORGANIZATION }}"
   TF_API_TOKEN: "${{ secrets.TF_API_TOKEN }}"
-  TF_WORKSPACE: "${{ secrets.TF_WORKSPACE }}"
+  TF_WORKSPACE: "${{ env.TF_WORKSPACE }}"
   CONFIG_DIRECTORY: "./"
 
 jobs:
