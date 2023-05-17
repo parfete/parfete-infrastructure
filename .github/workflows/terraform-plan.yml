@@ -2,7 +2,6 @@ name: 'Terraform Plan'
 
 on:
   pull_request:
-  push:
 
 env:
   TF_CLOUD_ORGANIZATION: "parfete"
